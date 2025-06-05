@@ -8,8 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-red-700: oklch(50.5% 0.213 27.518);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
@@ -162,8 +160,23 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
   .m-\[10rem\] {
     margin: 10rem;
+  }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
+  .mt-\[3rem\] {
+    margin-top: 3rem;
+  }
+  .mb-\[3rem\] {
+    margin-bottom: 3rem;
   }
   .table {
     display: table;
@@ -177,6 +190,18 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .pt-\[3rem\] {
+    padding-top: 3rem;
+  }
+  .pb-\[3rem\] {
+    padding-bottom: 3rem;
   }
   .text-center {
     text-align: center;
