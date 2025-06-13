@@ -40,3 +40,20 @@
     background-size: cover;
 }
 
+
+#fullstack{
+
+    background: linear-gradient(to left, #fff5db, #f8a61f);
+}
+
+#data-marketer{
+
+    background: linear-gradient(to left, #da48ff, #4a1a85);
+    
+}
+
+#data-scientist{
+
+    background: linear-gradient(to left, #f6474e, #c83da7);
+    
+}
