@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../src/input.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="shortcut icon" href="../assets/notebook.png" type="image/x-icon">
+    <title>Profile</title>
+</head>
+<body class="dark:bg-black">
+                <!-- ========== HEADER ========== -->
+<header class=" sticky top-0 inset-x-0 bg-[#3C3D37] border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+  <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 px-4 sm:px-6 lg:px-8 py-2">
+    <!-- Logo w/ Collapse Button -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80" href="../examples/html/scrollspy-onepage-menu.html" aria-label="Preline">
+        <!-- Logo here -->
+      </a>
+      <!-- End Logo -->
+
+      <!-- Collapse Button -->
+      <div class="md:hidden">
+        <button type="button" class="hs-collapse-toggle relative size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-header-scrollspy-collapse" aria-expanded="false" aria-controls="hs-header-scrollspy" aria-label="Toggle navigation" data-hs-collapse="#hs-header-scrollspy">
+          <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+          <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
+      <!-- End Collapse Button -->
+    </div>
+    <!-- End Logo w/ Collapse Button -->
+
+    <!-- Collapse -->
+    <div id="hs-header-scrollspy" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-header-scrollspy-collapse">
+      <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+        <div data-hs-scrollspy="#scrollspy" class="py-2 md:py-3 [--scrollspy-offset:220] md:[--scrollspy-offset:70] flex flex-col md:flex-row md:items-center md:justify-center gap-0.5 md:gap-5">
+          <a class="p-2 flex items-center text-sm text-[#e2e2b6] hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="../index.html">
+            <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            Home
+          </a>
+
+          <a class="p-2 flex items-center text-sm text-[#e2e2b6] hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 " href="about.html">
+            <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            About
+          </a>
+
+          <a class="p-2 flex items-center text-sm text-[#e2e2b6] hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 " href="course.html">
+            <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+            Course
+          </a>
+
+          <a class="p-2 flex items-center text-sm text-[#e2e2b6] hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 hs-scrollspy-active:bg-gray-100 dark:hs-scrollspy-active:bg-neutral-700" href="contact.html">
+            <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+            Contact
+          </a>
+
+          <!-- Dropdown -->
+          <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive] [--is-collapse:true] md:[--is-collapse:false] ">
+            <button id="hs-header-scrollspy-dropdown" type="button" class="hs-dropdown-toggle w-full p-2 flex items-center text-sm text-[#e2e2b6] hover:bg-gray-100 rounded-lg focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 hs-scrollspy-active:bg-gray-100 dark:hs-scrollspy-active:bg-neutral-700 active" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+              <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 2.5-2.5L3 5"/><path d="m3 19 2.5-2.5L3 14"/><path d="M10 6h11"/><path d="M10 12h11"/><path d="M10 18h11"/></svg>
+              Profile
+              <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 shrink-0 size-4 ms-auto md:ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative w-full md:w-52 hidden z-10 top-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:absolute before:-top-4 before:start-0 before:w-full before:h-5 md:after:hidden after:absolute after:top-1 after:start-4.5 after:w-0.5 after:h-[calc(100%-4px)] after:bg-gray-100 dark:md:bg-neutral-900 dark:after:bg-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-scrollspy-dropdown">
+              <div class="py-1 md:px-1 space-y-0.5">
+                <a class="py-2 px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300 hs-scrollspy-active:bg-gray-100 dark:hs-scrollspy-active:bg-neutral-700" href="profile.html">
+                  Profile
+                </a>
+                
+                <a class="py-2 px-3 flex gap-3 items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300 hs-scrollspy-active:bg-gray-100 dark:hs-scrollspy-active:bg-neutral-700" href="#three">
+                  Theme
+                  <button type="button" class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 cursor-pointer" data-hs-theme-click-value="dark">
+  <span class="group inline-flex shrink-0 justify-center items-center size-9">
+    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+    </svg>
+  </span>
+</button>
+<button type="button" class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 cursor-pointer" data-hs-theme-click-value="light">
+  <span class="group inline-flex shrink-0 justify-center items-center size-9">
+    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2"></path>
+      <path d="M12 20v2"></path>
+      <path d="m4.93 4.93 1.41 1.41"></path>
+      <path d="m17.66 17.66 1.41 1.41"></path>
+      <path d="M2 12h2"></path>
+      <path d="M20 12h2"></path>
+      <path d="m6.34 17.66-1.41 1.41"></path>
+      <path d="m19.07 4.93-1.41 1.41"></path>
+    </svg>
+  </span>
+</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- End Dropdown -->
+        </div>
+      </div>
+    </div>
+    <!-- End Collapse -->
+  </nav>
+</header>
+<!-- ========== END HEADER ========== -->
+
+<main>
+
+ <section class="flex gap-80">
+    <div class="  ml-40 mt-6">
+      <img class="rounded-full w-[10rem] " src="data:image/jpeg;base64,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" alt="Avatar" />
+      <h2 class="text-xl font-bold mt-1 dark:text-white">Panhawath</h2>
+        <p class="text-sm text-gray-600 mt-1">whatever</p>
+        <button class="text-sm text-purple-800 border border-purple-600 rounded-[5px] p-1.5 mt-1.5">Edit Profile</button>
+        <p class="text-[12px] text-gray-500 mt-[2rem]">Last active about 3 month ago</p>
+        <p class="text-[12px] text-gray-500">Joined Aug 12, 2024</p>
+    </div>
+    <div>
+    <div>
+      <h3 class=" text-[1.5rem] font-bold dark:text-white ">Services</h3> 
+      <div class="border border-black w-120 px-5 py-1.5 rounded-[5px] dark:border-white ">
+        <p class="text-[1rem] mb-2  dark:text-white">Peer support</p>
+        <p class="text-[12px] text-gray-500 mb-2">Get the most out of our community resources and connect with other learners!</p>
+        <div class="flex justify-end">
+            <button class="text-sm text-purple-600 border-purple-600 border px-3 py-1 rounded ">Visit community</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 class=" text-[1.5rem] font-bold mt-10  dark:text-white ">Latest Courses</h3> 
+      <div class="border border-black w-120 px-5 py-1.5 rounded-[5px] mt-2  dark:border-white ">
+        <p class="text-[1rem] mb-2  text-gray-500 ">Courses</p>
+        <p class="text-[15px] font-bold mb-2 text-white">Learn C++</p>
+        
+      </div>
+    </div>
+    <div >
+      <div class="border border-black w-120 px-5 py-1.5 rounded-[5px] mt-6  dark:border-white">
+        <p class="text-[1rem] mb-2  text-gray-500 ">Courses</p>
+        <p class="text-[15px] font-bold mb-2  dark:text-gray-200">Learn C++ for programmers</p>
+    </div>
+    </div>
+    <div >
+      <div class="border border-black w-120 px-5 py-1.5 rounded-[5px] mt-6  dark:border-white ">
+        <p class="text-[1rem] mb-2  text-gray-500">Courses</p>
+        <p class="text-[15px] font-bold mb-2  dark:text-gray-200">Learn Python 3</p>
+    </div>
+    </div>
+    <div>
+        <h2 class="mt-15 font-bold text-[1.5rem] mb-4  dark:text-white">Latest Certificates <p class=" font-normal inline-block bg-black text-white text-[13px]  dark:text-gray-700 dark:bg-white ">PRO</p></h2>
+        <a class="text-purple-600 underline " href="#">Upgrade to Pro</a>
+        <p class="inline-block  dark:text-white">to begin earning Certificates</p>
+    </div>
+    <h2 class="text-[1.5rem] mt-20 font-bold  dark:text-white">Streaks</h2>
+    <div class="border border-black rounded w-60 py-3 mt-3 inline-block mr-5  dark:border-white">
+       <p class="mb-2 pl-2  dark:text-white">LONGEST WEELLY STREAK</p> 
+       <P class="inline-block font-bold text-[1.5rem] pl-2  dark:text-white">1</P>
+       <P class="inline-block  dark:text-white">weeks in row</P>
+    </div>
+    <div class="border border-black rounded w-60 py-3 mt-3 inline-block mb-5  dark:border-white">
+       <p class="mb-2 pl-2  dark:text-white">CURRENT WEELLY STREAK</p> 
+       <P class="inline-block font-bold text-[1.5rem] pl-2  dark:text-white">0</P>
+       <P class="inline-block  dark:text-white">weeks in row</P>
+    </div>
+    </div>
+    </section>
+   
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========== FOOTER ========== -->
+<footer class="mt-auto bg-[#3c3d37] w-full dark:bg-neutral-950 ">
+  <div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+    <!-- Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div class="col-span-full lg:col-span-1">
+        <a class="flex-none text-xl font-semibold text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">Brand</a>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-1">
+        <h4 class="font-semibold text-gray-100">Home</h4>
+
+        <div class="mt-3 grid space-y-3">
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Pricing</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Changelog</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Docs</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-1">
+        <h4 class="font-semibold text-gray-100">About</h4>
+
+        <div class="mt-3 grid space-y-3">
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">About us</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Blog</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Careers</a> <span class="inline-block ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">We're hiring</span></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Customers</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-2">
+        <h4 class="font-semibold text-gray-100">Course</h4>
+         <div class="mt-3 grid space-y-3">
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Course 1</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Course 2</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Course 3</a> 
+        </div>
+
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+
+    <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+      <div class="flex flex-wrap justify-between items-center gap-2">
+        <p class="text-sm text-gray-400 dark:text-neutral-400">
+          © 2025 Merean Team.
+        </p>
+      </div>
+      <!-- End Col -->
+
+      <!-- Social Brands -->
+      <div>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="https://www.facebook.com/istad.co/">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="mailto:panhawath18@gmail.com">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="https://github.com/meypanhawath">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+          </svg>
+        </a>
+      </div>
+      <!-- End Social Brands -->
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../node_modules/preline/dist/preline.js"></script>
+</body>
+</html>
