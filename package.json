@@ -4,6 +4,7 @@
   "main": "tailwind.js",
   "dependencies": {
     "braces": "^3.0.3",
+    "canvas-confetti": "^1.9.3",
     "chownr": "^3.0.0",
     "detect-libc": "^1.0.3",
     "enhanced-resolve": "^5.18.1",
