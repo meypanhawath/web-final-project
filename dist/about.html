@@ -142,7 +142,7 @@
     <section class="max-w-[85rem] container xl:mx-auto xl:px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto dark:text-gray-200 px-20">
     
 
-    <h3 class="text-2xl font-semibold mb-2">About Us</h3>
+    <h3 id="about-us" class="text-2xl font-semibold mb-2">About Us</h3>
       <p class="text-md leading-relaxed">
         At Merean, we believe that accessible education is a catalyst for personal growth and national development. In a world increasingly shaped by technology, coding has become a universal language—and we're on a mission to make that language accessible to every Cambodian.
 <br><br>
@@ -180,7 +180,7 @@ Join us on this journey to unlock your potential and help shape a smarter, more 
   </section>
 
   <!-- Vision & Mission Cards -->
-  <section class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto md:px-16 grid md:grid-cols-2 gap-8 text-white dark:text-gray-200">
+  <section id="mission-vision" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto md:px-16 grid md:grid-cols-2 gap-8 text-white dark:text-gray-200">
     <div class="p-6 rounded-xl shadow-sm bg-blue-900">
       <h4 class="text-xl font-bold mb-2">VISION</h4>
       <p class="text-md">
@@ -210,7 +210,7 @@ Join us on this journey to unlock your potential and help shape a smarter, more 
 
 
 <!-- Team -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div id="team" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Title -->
 
   <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-10">
@@ -468,41 +468,42 @@ Join us on this journey to unlock your potential and help shape a smarter, more 
 <footer class="mt-auto bg-gray-900 w-full dark:bg-neutral-950">
   <div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
     <!-- Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
       <div class="col-span-full lg:col-span-1">
-        <a class="flex-none text-xl font-semibold text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">Brand</a>
+        
+        <a class="flex-none text-xl font-semibold text-white focus:outline-hidden focus:opacity-80" href="../index.html" aria-label="Brand"><img class="w-50" src="../assets/logo-dark-v3.png" alt=""></a>
       </div>
       <!-- End Col -->
 
-      <div class="col-span-1">
+      <div class="col-span-1 xl:text-center">
         <h4 class="font-semibold text-gray-100">Home</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Pricing</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Changelog</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Docs</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="../index.html#price-list">Pricing</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="../index.html#feedback">Feedback</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="../index.html#info">Info</a></p>
         </div>
       </div>
       <!-- End Col -->
 
-      <div class="col-span-1">
+      <div class="col-span-1 xl:text-center">
         <h4 class="font-semibold text-gray-100">About</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">About us</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Blog</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Careers</a> <span class="inline-block ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">We're hiring</span></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Customers</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./about.html#about-us">About us</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./about.html#mission-vision">Mission & Vision</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./about.html#team">Team</a></p>
+
         </div>
       </div>
       <!-- End Col -->
 
-      <div class="col-span-2">
+      <div class="col-span-1 xl:text-center">
         <h4 class="font-semibold text-gray-100">Course</h4>
          <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Course 1</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Course 2</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Course 3</a> 
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./course.html#course">Course</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./contact.html#faq">FAQ</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./contact.html#contact">Contact</a> 
         </div>
 
       </div>
