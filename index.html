@@ -8,16 +8,19 @@
     <link rel="shortcut icon" href="./assets/notebook.png" type="image/x-icon">
     <title>Home</title>
 </head>
-<body class="bg-[#ece9e6] dark:bg-[#070b13] dark:text-white">
+<body class="bg-[#f3f4f6] dark:bg-[#070b13] dark:text-white">
     <!-- ========== HEADER ========== -->
 <header class="sticky top-0 inset-x-0 bg-white border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
   <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 px-4 sm:px-6 lg:px-8 py-2">
     <!-- Logo w/ Collapse Button -->
     <div class="flex items-center justify-between">
       <!-- Logo -->
-       <img class="w-50 dark:hidden" src="./assets/logo-light-v6.png" alt="">
+       <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80" href="./index.html" aria-label="Preline">     
+        <img class="w-50 dark:hidden" src="./assets/logo-light-v6.png" alt="">
        <img class="w-50 hidden dark:block" src="./assets/logo-dark-v4.png" alt="">
-      <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80" href="#" aria-label="Preline">
+      </a>
+  
+      
         <!-- <img src="./assets/logo-light.png" alt=""> -->
       </a>
       <!-- End Logo -->
@@ -113,9 +116,107 @@
 
 
 
+<!-- Hero Section -->
+<section class="max-w-[85rem] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-6 md:px-20 py-10 gap-10 overflow-hidden xl:my-10 ">
+  <!-- Left -->
+  <div class="flex-1 flex flex-col justify-center h-full">
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+      <span class="relative inline-block">
+        <span class="text-[#102e50] dark:text-amber-600 z-10 relative">Improve</span>
+        <svg class="absolute -top-2 -left-2 z-0 w-[130%] h-[120%] dark:hidden" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5,50 Q100,0 195,50" stroke="#F7C873" stroke-width="8" fill="none" stroke-linecap="round" />
+        </svg>
+      </span>
+      your Skill<br />
+      With This Way
+    </h1>
+    <p class="text-gray-600 mb-6 max-w-md">
+      Take an online course and learn in a flexible and fun way. Choose your own pace and track your progress toward your goals.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex gap-4 flex-wrap">
+      <a href="./dist/course.html">
+        <button class="cursor-pointer bg-[#102e50] dark:bg-amber-600 text-white px-6 py-2 rounded-lg font-semibold shadow-md dark:hover:bg-amber-700 hover:bg-[#103e50]">
+        Course
+      </button>
+      </a>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="flex flex-wrap gap-10 mt-10 text-center">
+      <div>
+        <p class="text-2xl font-bold">94k</p>
+        <p class="text-gray-500 text-sm">Enrolled Students</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">27k</p>
+        <p class="text-gray-500 text-sm">Active Users</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">2k+</p>
+        <p class="text-gray-500 text-sm">Classes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Image -->
+  <div class="flex-1 relative w-full h-full">
+    <div class="relative w-full h-full">
+      <img src="./assets/hero-section-img.png" alt="Thumbs up"
+        class="w-full h-full object-cover rounded-xl max-h-[32rem] mx-auto" />
+      <div class="absolute top-4 right-4 bg-emerald-600 text-white p-2 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+        </svg>
+      </div>
+      <div class="absolute bottom-0 left-0 bg-white px-4 py-2 text-sm rounded-t-xl shadow font-medium dark:text-black">
+        Enroll and Get <span class="text-emerald-600 dark:text-amber-600">50% OFF</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course Syllabus -->
+<section class="px-6 md:px-20 py-16 bg-gray-50 dark:bg-[#222831]">
+  <h2 class="text-3xl font-bold mb-12 text-center">What You'll Learn</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+    <div class="bg-white dark:bg-[#070b13] rounded-xl shadow-lg p-6 flex flex-col gap-3 hover:shadow-xl transition">
+      <div class="text-3xl">🧠</div>
+      <h4 class="font-semibold text-xl dark:text-amber-600">Critical Thinking</h4>
+      <p class="text-gray-600 text-sm">Sharpen your logic and solve real-world problems through smart problem-solving.</p>
+    </div>
+    <div class="bg-white dark:bg-[#070b13] rounded-xl shadow-lg p-6 flex flex-col gap-3 hover:shadow-xl transition">
+      <div class="text-3xl">💻</div>
+      <h4 class="font-semibold text-xl dark:text-amber-600">Programming Basics</h4>
+      <p class="text-gray-600 text-sm">Learn syntax, variables, loops, and functions using Java, Python, and C++.</p>
+    </div>
+    <div class="bg-white dark:bg-[#070b13] rounded-xl shadow-lg p-6 flex flex-col gap-3 hover:shadow-xl transition">
+      <div class="text-3xl">📈</div>
+      <h4 class="font-semibold text-xl dark:text-amber-600">Career Boost</h4>
+      <p class="text-gray-600 text-sm">Earn a certificate and improve your chances in the competitive tech job market.</p>
+    </div>
+    <div class="bg-white dark:bg-[#070b13] rounded-xl shadow-lg p-6 flex flex-col gap-3 hover:shadow-xl transition">
+      <div class="text-3xl">🛠️</div>
+      <h4 class="font-semibold text-xl dark:text-amber-600">Project Building</h4>
+      <p class="text-gray-600 text-sm">Work on mini-projects that you can showcase in your developer portfolio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="px-6 md:px-20 py-16 bg-[#102e50] dark:bg-[#222831] text-white text-center">
+  <h2 class="text-3xl font-bold mb-4">Start Your Journey Today</h2>
+  <p class="mb-6">Join thousands of students who are growing their skills and careers every day.</p>
+  <a href="./dist/enroll.html" class="bg-white text-[#102e50] dark:bg-amber-600 dark:text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-100 dark:hover:bg-amber-700">Enroll Now</a>
+</section>
+
+
 
 <!-- Slider -->
-<div data-hs-carousel='{
+<!-- <div data-hs-carousel='{
     "loadingClasses": "opacity-0",
     "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"
   }' class="relative">
@@ -157,7 +258,7 @@
   </button>
 
   <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 flex gap-x-2"></div>
-</div>
+</div> -->
 <!-- End Slider -->  
 
 
@@ -372,32 +473,32 @@
 
 
 <!-- Pricing -->
-<section class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-white dark:bg-[#222831]">
+<section class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#102e50] dark:bg-[#222831]">
   <!-- Title -->
   
   <div class="max-w-[85rem] mx-auto">
     <div class="max-w-[2xl] mx-auto text-center mb-10 lg:mb-14 ">
-    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Choose your plan</h2>
-    <p class="mt-1 text-gray-600 dark:text-neutral-400">Whatever your status, our offers evolve according to your needs.</p>
+    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white text-white">Choose your plan</h2>
+    <p class="mt-1 text-gray-400 dark:text-neutral-400">Whatever your status, our offers evolve according to your needs.</p>
   </div>
   <!-- End Title -->
 
   <!-- Switch -->
   <div class="flex justify-center items-center gap-x-3">
-    <label for="pricing-switch" class="text-sm text-gray-800 dark:text-neutral-200">Monthly</label>
+    <label for="pricing-switch" class="text-sm text-white dark:text-neutral-200 ">Monthly</label>
     <label for="pricing-switch" class="relative inline-block w-11 h-6 cursor-pointer">
       <input type="checkbox" id="pricing-switch" class="peer sr-only" checked>
-      <span class="absolute inset-0 bg-gray-200 rounded-full transition-colors duration-200 ease-in-out peer-checked:bg-blue-600 dark:bg-neutral-700 dark:peer-checked:bg-blue-500 peer-disabled:opacity-50 peer-disabled:pointer-events-none"></span>
+      <span class="absolute inset-0 bg-gray-200 rounded-full transition-colors duration-200 ease-in-out peer-checked:bg-blue-600 dark:bg-neutral-700 dark:peer-checked:bg-amber-600 peer-disabled:opacity-50 peer-disabled:pointer-events-none"></span>
       <span class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-white rounded-full shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full dark:bg-neutral-400 dark:peer-checked:bg-white"></span>
     </label>
-    <label for="pricing-switch" class="relative text-sm text-gray-800 dark:text-neutral-200">
+    <label for="pricing-switch" class="relative text-sm text-white dark:text-neutral-200 ">
       Annually
       <span class="absolute -top-10 start-auto -end-28">
         <span class="flex items-center">
           <svg class="w-14 h-8 -me-6" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M43.2951 3.47877C43.8357 3.59191 44.3656 3.24541 44.4788 2.70484C44.5919 2.16427 44.2454 1.63433 43.7049 1.52119L43.2951 3.47877ZM4.63031 24.4936C4.90293 24.9739 5.51329 25.1423 5.99361 24.8697L13.8208 20.4272C14.3011 20.1546 14.4695 19.5443 14.1969 19.0639C13.9242 18.5836 13.3139 18.4152 12.8336 18.6879L5.87608 22.6367L1.92723 15.6792C1.65462 15.1989 1.04426 15.0305 0.563943 15.3031C0.0836291 15.5757 -0.0847477 16.1861 0.187863 16.6664L4.63031 24.4936ZM43.7049 1.52119C32.7389 -0.77401 23.9595 0.99522 17.3905 5.28788C10.8356 9.57127 6.58742 16.2977 4.53601 23.7341L6.46399 24.2659C8.41258 17.2023 12.4144 10.9287 18.4845 6.96211C24.5405 3.00476 32.7611 1.27399 43.2951 3.47877L43.7049 1.52119Z" fill="currentColor" class="fill-gray-300 dark:fill-neutral-700"/>
           </svg>
-          <span class="mt-3 inline-block whitespace-nowrap text-[11px] leading-5 font-semibold uppercase bg-blue-600 text-white rounded-full py-1 px-2.5">Save up to 10%</span>
+          <span class="mt-3 inline-block whitespace-nowrap text-[11px] leading-5 font-semibold uppercase bg-blue-600 dark:bg-amber-600 text-white rounded-full py-1 px-2.5">Save up to 10%</span>
         </span>
       </span>
     </label>
@@ -408,9 +509,9 @@
  <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
     <!-- Card -->
     <div class="flex flex-col justify-between h-full border border-gray-200 text-center rounded-xl p-8 dark:border-neutral-800">
-      <h4 class="font-medium text-lg text-gray-800 dark:text-neutral-200">Free</h4>
-      <span class="mt-7 font-bold text-5xl text-gray-800 dark:text-neutral-200">Free</span>
-      <p class="mt-2 text-sm text-gray-500 dark:text-neutral-500">Forever free</p>
+      <h4 class="font-medium text-lg text-white dark:text-neutral-200">Free</h4>
+      <span class="mt-7 font-bold text-5xl text-white dark:text-neutral-200">Free</span>
+      <p class="mt-2 text-sm text-gray-400 dark:text-neutral-500">Forever free</p>
 
       <ul class="mt-2 space-y-2.5 text-sm">
         <a class="mt-2 mb-5 w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-50 dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="./dist/price.html">
@@ -420,21 +521,21 @@
           
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             For Individual
           </span>
         </li>
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
              Access to free courses
           </span>
         </li>
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             No credit card require
           </span>
         </li>
@@ -446,35 +547,35 @@
 
     <!-- Card -->
     <div id="price-list" class="flex flex-col justify-between h-full border-2 border-blue-600 text-center shadow-xl rounded-xl p-8 dark:border-blue-700">
-      <p class="mb-3"><span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-blue-100 text-blue-800 dark:bg-blue-600 dark:text-white">Most popular</span></p>
-      <h4 class="font-medium text-lg text-gray-800 dark:text-neutral-200">Personal Plan</h4>
-      <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-neutral-200">
+      <p class="mb-3"><span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-blue-100 text-blue-800 dark:bg-amber-600 dark:text-white">Most popular</span></p>
+      <h4 class="font-medium text-lg text-white dark:text-neutral-200">Personal Plan</h4>
+      <span class="mt-5 font-bold text-5xl text-white dark:text-neutral-200">
         <span class="font-bold text-2xl -me-2">$</span>
         2.99
       </span>
-      <p class="mt-2 text-sm text-gray-500 dark:text-neutral-500">Billed monthly or annually. Cancel anytime.</p>
+      <p class="mt-2 text-sm text-gray-400 dark:text-neutral-500">Billed monthly or annually. Cancel anytime.</p>
 
       <ul class="mt-2 space-y-2.5 text-sm">
-        <a class="mt-2 mb-5 w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="./dist/price.html">
+        <a class="mt-2 mb-5 w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 dark:bg-amber-600 dark:hover:bg-amber-700 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="./dist/price.html">
         Get started
       </a>
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             For individual
           </span>
         </li>
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             Access to Pro courses
           </span>
         </li>
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             Certification prep
           </span>
         </li>
@@ -485,12 +586,12 @@
 
     <!-- Card -->
     <div class="flex flex-col justify-between h-full border border-gray-200 text-center rounded-xl p-8 dark:border-neutral-800">
-      <h4 class="font-medium text-lg text-gray-800 dark:text-neutral-200">Team plan</h4>
-      <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-neutral-200">
+      <h4 class="font-medium text-lg text-white dark:text-neutral-200">Team plan</h4>
+      <span class="mt-5 font-bold text-5xl text-white dark:text-neutral-200">
         <span class="font-bold text-2xl -me-2">$</span>
         5.99
       </span>
-      <p class="mt-2 text-sm text-gray-500 dark:text-neutral-500">Team up with your friend, enjoy course together</p>
+      <p class="mt-2 text-sm text-gray-500 dark:text-neutral-400">Team up with your friend, enjoy course together</p>
 
       <ul class="mt-2 space-y-2.5 text-sm">
                 <a class="mt-2 mb-5 w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-50 dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="./dist/price.html">
@@ -499,21 +600,21 @@
         <li class="flex gap-x-2">
           
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
-            5 users
+          <span class="text-gray-300 dark:text-neutral-400">
+            For 5 users
           </span>
         </li>
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             Access to Pro courses
           </span>
         </li>
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             Certification prep
           </span>
         </li>
@@ -524,12 +625,12 @@
 
     <!-- Card -->
     <div class="flex flex-col justify-between h-full border border-gray-200 text-center rounded-xl p-8 dark:border-neutral-800">
-      <h4 class="font-medium text-lg text-gray-800 dark:text-neutral-200">Premium</h4>
-      <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-neutral-200">
+      <h4 class="font-medium text-lg text-white dark:text-neutral-200">Premium</h4>
+      <span class="mt-5 font-bold text-5xl text-white dark:text-neutral-200">
         <span class="font-bold text-2xl -me-2">$</span>
       5.99
       </span>
-      <p class="mt-2 text-sm text-gray-500 dark:text-neutral-500">Unlock your full potential with the Premium Plan</p>
+      <p class="mt-2 text-sm text-gray-500 dark:text-neutral-400">Unlock your full potential with the Premium Plan</p>
 
       <ul class="mt-2 space-y-2.5 text-sm">
                 <a class="mt-2 mb-5 w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-50 dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="./dist/price.html">
@@ -537,14 +638,14 @@
       </a>
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             For individual
           </span>
         </li>
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             Access to Premium courses
           </span>
         </li>
@@ -552,7 +653,7 @@
 
         <li class="flex gap-x-2">
           <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span class="text-gray-800 dark:text-neutral-400">
+          <span class="text-gray-300 dark:text-neutral-400">
             Certification prep
           </span>
         </li>
@@ -575,7 +676,7 @@
 
 
 <!-- Testimonials -->
-<div id="feedback" class="overflow-hidden bg-white dark:bg-[#222831]">
+<div id="feedback" class="overflow-hidden bg-[#102e50] dark:bg-[#222831]">
   <div class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
     <div class="max-w-2xl w-3/4 lg:w-1/2 mb-6 sm:mb-10 md:mb-16">
@@ -596,17 +697,17 @@
             </p>
           </div>
 
-          <div class="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-neutral-800">
+          <div class="p-4 bg-gray-600 rounded-b-xl md:px-7 dark:bg-neutral-800">
             <div class="flex items-center gap-x-3">
               <div class="shrink-0">
                 <img class="size-8 sm:size-11.5 rounded-full" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
               </div>
 
               <div class="grow">
-                <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">
+                <p class="text-sm sm:text-base font-semibold text-white dark:text-neutral-200">
                   Sok Reaksmey
                 </p>
-                <p class="text-xs text-gray-500 dark:text-neutral-400">
+                <p class="text-xs text-gray-200 dark:text-neutral-400">
                   Student
                 </p>
               </div>
@@ -625,17 +726,17 @@
             </p>
           </div>
 
-          <div class="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-neutral-800">
+          <div class="p-4 bg-gray-600 rounded-b-xl md:px-7 dark:bg-neutral-800">
             <div class="flex items-center gap-x-3">
               <div class="shrink-0">
                 <img class="size-8 sm:size-11.5 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
               </div>
 
               <div class="grow">
-                <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">
+                <p class="text-sm sm:text-base font-semibold text-white dark:text-neutral-200">
                   Mean Sokha
                 </p>
-                <p class="text-xs text-gray-500 dark:text-neutral-400">
+                <p class="text-xs text-gray-200 dark:text-neutral-400">
                   Student
                 </p>
               </div>
@@ -654,17 +755,17 @@
             </p>
           </div>
 
-          <div class="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-neutral-800">
+          <div class="p-4 bg-gray-600 rounded-b-xl md:px-7 dark:bg-neutral-800">
             <div class="flex items-center gap-x-3">
               <div class="shrink-0">
                 <img class="size-8 sm:size-11.5 rounded-full" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80" alt="Avatar">
               </div>
 
               <div class="grow">
-                <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">
+                <p class="text-sm sm:text-base font-semibold text-white dark:text-neutral-200">
                   Mon Rotha
                 </p>
-                <p class="text-xs text-gray-500 dark:text-neutral-400">
+                <p class="text-xs text-gray-200 dark:text-neutral-400">
                   Student
                 </p>
               </div>
@@ -681,7 +782,7 @@
       <!-- Stats -->
       <div>
         <h4 class="text-lg sm:text-xl font-semibold text-white">Accuracy rate</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">99.95%</p>
+        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500 dark:text-amber-600">99.95%</p>
         <p class="mt-1 text-gray-400">in fulfilling orders</p>
       </div>
       <!-- End Stats -->
@@ -689,7 +790,7 @@
       <!-- Stats -->
       <div>
         <h4 class="text-lg sm:text-xl font-semibold text-white">Explore new skills</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">10,000+</p>
+        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500 dark:text-amber-600">10,000+</p>
         <p class="mt-1 text-gray-400">Access 10,000+ courses in AI, <br> Fullstack, Data base, and more.</p>
       </div>
       <!-- End Stats -->
@@ -697,7 +798,7 @@
       <!-- Stats -->
       <div>
         <h4 class="text-lg sm:text-xl font-semibold text-white">Happy customer</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">95%</p>
+        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500 dark:text-amber-600">95%</p>
         <p class="mt-1 text-gray-400">this year alone</p>
       </div>
       <!-- End Stats -->
@@ -843,7 +944,7 @@
         <h4 class="font-semibold text-gray-100">Home</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200 " href="./index.html#price-list">Pricing</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./index.html#price-list">Pricing</a></p>
           <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./index.html#feedback">Feedback</a></p>
           <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="./index.html#info">Info</a></p>
         </div>
